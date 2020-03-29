@@ -10,6 +10,19 @@ In a nutshell, as COVID-19 forced us all to stay indoors, my friends and I wante
 
 Kagami is Japanese for mirror. The software mirrors not only video sources, but your desktop as well (I’m tired of the crappy screen sharing options out there as well). Kagami also mirrors the remote control to all participants in a group, so the concept of a mirror stuck in my mind.
 
+## Prepare Your Machine
+
+Kagami is written in C++ and uses Qt5. You will need to first install Qt5.
+
+For macOS, grab the installer from https://www.qt.io/download-open-source
+
+For Ubuntu, run these commands:
+
+```shell
+sudo apt update
+sudo apt install -y build-essential qt5-default qtcreator
+```
+
 ## Build Steps
 
 Fork and clone this repo:
