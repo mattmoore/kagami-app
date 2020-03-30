@@ -16,10 +16,12 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::screenshot() {
-    QScreen *screen = QGuiApplication::primaryScreen();
-    if (const QWindow *window = windowHandle())
-        screen = window->screen();
-    if (!screen)
-        return;
-    screen->grabWindow(0);
+//    QScreen *screen = QGuiApplication::primaryScreen();
+//    if (const QWindow *window = windowHandle())
+//        screen = window->screen();
+//    if (!screen)
+//        return;
+//    screen->grabWindow(0);
+    Kagami kagami;
+    kagami.screenshot();
 }

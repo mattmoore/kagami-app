@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QWindow>
 #include <QScreen>
+#include "kagami.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

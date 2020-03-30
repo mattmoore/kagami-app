@@ -33,5 +33,9 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-unix: CONFIG += link_pkgconfig
-unix: PKGCONFIG += opencv4
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../kagami/release/ -lkagami.0.1.0
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../kagami/debug/ -lkagami.0.1.0
+else:unix: LIBS += -L$$PWD/../kagami/ -lkagami.0.1.0
+
+INCLUDEPATH += $$PWD/../kagami
+DEPENDPATH += $$PWD/../kagami
