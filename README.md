@@ -1,6 +1,6 @@
 # Kagami
 
-Watch movies, TV shows and listen to music with your friends remotely.
+This is the frontend that uses Kagami Library, available here: https://github.com/mattmoore/kagami
 
 ## What’s Kagami?
 
