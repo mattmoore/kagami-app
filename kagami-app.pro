@@ -39,3 +39,5 @@ else:unix: LIBS += -L$$PWD/../kagami/ -lkagami.0.1.0
 
 INCLUDEPATH += $$PWD/../kagami
 DEPENDPATH += $$PWD/../kagami
+
+TARGET = "Kagami.app"
