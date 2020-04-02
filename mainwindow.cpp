@@ -23,5 +23,5 @@ void MainWindow::screenshot() {
 //        return;
 //    screen->grabWindow(0);
     Kagami kagami;
-    kagami.screenshot();
+    kagami.screenshot("/Users/mattmoore/Desktop/screenshot.png");
 }
